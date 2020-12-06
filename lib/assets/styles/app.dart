@@ -5,7 +5,9 @@ import 'package:flutter/material.dart';
 // import individual modules
 import 'base/text.dart';
 
-// build theme styles
+/// Styles
+/// ---------
+/// Build all app styles. *Inspired by SASS*
 ThemeData styles() {
   return ThemeData(
     appBarTheme: AppBarTheme(
@@ -15,7 +17,7 @@ ThemeData styles() {
     textTheme: TextTheme(
       headline6: TitleTextStyle,
       bodyText2: PrimaryBodyTextStyle,
-      headline5: PrimaryHeadingTextStyle, 
-    )
+      headline5: PrimaryHeadingTextStyle,
+    ),
   );
 }

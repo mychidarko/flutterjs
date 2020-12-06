@@ -2,19 +2,21 @@ import 'package:flutterjs/router/router.dart';
 import 'package:flutterjs/router/routes.dart';
 import 'package:flutter/material.dart';
 
-class Home extends StatelessWidget {
-  @override
+class Profile extends StatelessWidget {
+  final int id;
 
-  // build function which returns type: Widget
+  Profile(this.id);
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
         child: ListView(
           children: [
-            Text('Homepage'),
+            Text('Profile Screen for user $id'),
             GestureDetector(
-              child: Text('Go To Profile Screen'),
-              onTap: () => routeTo(context, ProfileRoute, {"id": 2}),
+              child: Text('Go To Home Screen'),
+              onTap: () => routeTo(context, HomeRoute, {}),
             )
           ],
         ),

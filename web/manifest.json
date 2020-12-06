@@ -1,6 +1,6 @@
 {
-    "name": "first",
-    "short_name": "first",
+    "name": "flutterjs",
+    "short_name": "flutterjs",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
