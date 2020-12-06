@@ -1,5 +1,6 @@
 // import screens
 import '../screens/error/error.dart';
+import '../screens/login/login.dart';
 import '../screens/home/home.dart';
 import '../screens/profile/profile.dart';
 
@@ -7,6 +8,7 @@ import '../screens/profile/profile.dart';
 // as the route name when using routeTo
 const HomeRoute = '/';
 const ProfileRoute = '/profile';
+const LoginRoute = '/auth/login';
 
 // Add all your app routes here, the router has already been configured for you
 // Params are variables passed into the route from another screen
@@ -16,6 +18,10 @@ List<Map<String, dynamic>> screens(params) {
     {
       'name': HomeRoute,
       'screen': Home(),
+    },
+    {
+      'name': LoginRoute,
+      'screen': Login(),
     },
     {
       'name': ProfileRoute,

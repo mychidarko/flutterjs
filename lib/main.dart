@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
       title: AppName,
       theme: styles(),
       onGenerateRoute: router(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
