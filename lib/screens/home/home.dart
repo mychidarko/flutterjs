@@ -1,6 +1,6 @@
+import 'package:flutter/material.dart';
 import 'package:flutterjs/router/router.dart';
 import 'package:flutterjs/router/routes.dart';
-import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -14,7 +14,7 @@ class Home extends StatelessWidget {
             Text('Homepage'),
             GestureDetector(
               child: Text('Go To Profile Screen'),
-              onTap: () => routeTo(context, ProfileRoute, {"id": 2}),
+              onTap: () => routeTo(context, ProfileRoute, params: {"id": 3}),
             )
           ],
         ),

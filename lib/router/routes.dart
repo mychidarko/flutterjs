@@ -2,12 +2,16 @@
 import '../screens/error/error.dart';
 import '../screens/login/login.dart';
 import '../screens/home/home.dart';
+import '../screens/movie/movie.dart';
+import '../screens/bookmarks/bookmarks.dart';
 import '../screens/profile/profile.dart';
 
 // name all routes. Named routes can be called
 // as the route name when using routeTo
 const HomeRoute = '/';
 const ProfileRoute = '/profile';
+const BookmarksRoute = '/bookmarks';
+const MovieRoute = '/movie';
 const LoginRoute = '/auth/login';
 
 // Add all your app routes here, the router has already been configured for you
@@ -24,8 +28,16 @@ List<Map<String, dynamic>> screens(params) {
       'screen': Login(),
     },
     {
+      'name': BookmarksRoute,
+      'screen': Bookmarks(),
+    },
+    {
+      'name': MovieRoute,
+      'screen': Movie(),
+    },
+    {
       'name': ProfileRoute,
-      'screen': Profile(params['id']),
+      'screen': Profile(params('id')),
     },
     {
       'name': '*',

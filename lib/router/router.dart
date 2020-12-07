@@ -15,9 +15,10 @@ RouteFactory router() {
     Widget screen;
     Widget error;
 
+    dynamic args = settings.arguments ?? {};
+
     // Get routes with params if needed
-    final Map args = settings.arguments;
-    final List<Map<String, dynamic>> routes = screens(args);
+    final List<Map<String, dynamic>> routes = screens((param) => args[param]);
 
     for (var i = 0; i < routes.length; i++) {
       // match error screen
@@ -43,6 +44,14 @@ RouteFactory router() {
 
 // Build navigator
 /// Navigate to a different screen. *Inspired by vue router*
-void routeTo(BuildContext context, String route, Object params) {
+void routeTo(BuildContext context, String route, {Object params}) {
   Navigator.pushNamed(context, route, arguments: params);
+}
+
+void routeBack(BuildContext context) {
+  Navigator.pop(context);
+}
+
+void pushToRoute(BuildContext context, Route route) {
+  Navigator.push(context, route);
 }
