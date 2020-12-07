@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutterjs/router/router.dart';
-import 'package:flutterjs/router/routes.dart';
 
 class Profile extends StatelessWidget {
-  final int id;
+  final int _id;
 
-  Profile(this.id);
+  Profile(this._id);
 
   @override
   Widget build(BuildContext context) {
@@ -13,10 +12,10 @@ class Profile extends StatelessWidget {
       body: Center(
         child: ListView(
           children: [
-            Text('Profile Screen for user $id'),
+            Text('Profile Screen for user $_id'),
             GestureDetector(
-              child: Text('Go To Home Screen'),
-              onTap: () => routeTo(context, HomeRoute),
+              child: Text('Go Back'),
+              onTap: () => routeBack(context),
             )
           ],
         ),
