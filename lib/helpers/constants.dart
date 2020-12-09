@@ -1,2 +1,2 @@
 // App constants
-const AppName = 'flutterjs River';
+const AppName = 'flutterjs';

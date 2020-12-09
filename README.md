@@ -71,23 +71,23 @@ Now, you just need to pass it into the route list
 ```dart
 {
   'name': ProfileRoute,
-  'screen': Profile($params['id']),
+  'screen': Profile(params('id')),
 },
 ```
 
 Finally, you include it in the Screen's constructor, so it knows it's supposed to look for it on load.
 
 ```dart
-class LocationDetail extends StatelessWidget {
-  // Set variable
-  final int _locationID;
+class Profile extends StatelessWidget {
+  final int _id;
 
-  // Set constructor variable to class variable
-  LocationDetail(this._locationID);
+  Profile(this._id);
 
   @override
   Widget build(BuildContext context) {
-    // use variable
-    final location = Location.fetchByID(_locationID);
-    ...
+    return Scaffold(
+      body: Center(
+        child: ListView(
+          children: [
+            Text('Profile Screen for user $_id'),
 ```

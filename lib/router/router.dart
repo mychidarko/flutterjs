@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 import 'routes.dart';
 
 // Build router
-/// Router
+/// App Router
 /// --------
-/// Maps routes to respective screens
+/// Core engine behind routing in flutterjs.
 /// *inspired by vue router*
 RouteFactory router() {
   return (settings) {
