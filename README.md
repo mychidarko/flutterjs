@@ -9,7 +9,7 @@ The whole idea is to create some level of familiarity for web, especially JavaSc
 - Clone this project.
 - Search and replace all occurances of `flutterjs` with the name of your project
 - Add your screens (routes/pages) in `lib/router/routes.dart`
-- Configure your app styles/theme in `lib/assets/styles`
+- Configure your app styles/theme in `lib/assets`
 - Add and remove screens (pages) in `lib/screens`
 - General widgets (components) go in `lib/widgets`, screen based widgets in `lib\screens\{screen}\widgets`
 

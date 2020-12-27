@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 // import app files
 import 'helpers/constants.dart';
-import 'assets/styles/app.dart';
+import 'styles/app.dart';
 import 'router/router.dart';
 
 void main() => runApp(MyApp());

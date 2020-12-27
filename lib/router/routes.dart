@@ -45,7 +45,9 @@ List<Map<String, dynamic>> screens(params) {
     },
     {
       'name': MovieRoute,
-      'screen': Movie(),
+      'screen': Movie(
+        show: params('data'),
+      ),
     },
     {
       'name': MoviesRoute,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutterjs/assets/styles/app.dart';
-import 'package:flutterjs/assets/styles/constants.dart';
+import 'package:flutterjs/styles/app.dart';
+import 'package:flutterjs/styles/constants.dart';
 
 class SectionHeader extends StatelessWidget {
   final String title;

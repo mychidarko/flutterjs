@@ -4,13 +4,17 @@ import 'package:flutterjs/router/widgets.dart';
 
 class FJSCardCarousel extends StatelessWidget {
   final Function builder;
+  final int count;
 
   final pageController = PageController(
     viewportFraction: 0.9,
     keepPage: true,
   );
 
-  FJSCardCarousel({@required this.builder});
+  FJSCardCarousel({
+    @required this.builder,
+    @required this.count,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +24,7 @@ class FJSCardCarousel extends StatelessWidget {
       child: PageView.builder(
         controller: pageController,
         scrollDirection: Axis.horizontal,
-        itemCount: 5,
+        itemCount: count,
         itemBuilder: (context, index) {
           return builder(context, index);
         },

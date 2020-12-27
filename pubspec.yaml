@@ -47,8 +47,8 @@ flutter:
   # These are assets for our flutter app. Each folder/subfolder should
   # be defined here, as demonstrated below.
   assets:
-    - lib/assets/images/
-    - lib/assets/images/avatars/
+    - assets/images/
+    - assets/images/avatars/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -64,14 +64,14 @@ flutter:
   fonts:
     - family: ProductSans
       fonts:
-        - asset: lib/assets/fonts/ProductSans/Product-Sans.ttf
+        - asset: assets/fonts/ProductSans/Product-Sans.ttf
     - family: Montserrat
       fonts:
-        - asset: lib/assets/fonts/Montserrat/Montserrat-Medium.otf
+        - asset: assets/fonts/Montserrat/Montserrat-Medium.otf
     - family: Segoe
       fonts:
-        - asset: lib/assets/fonts/Segoe/segoe-regular.ttf
-        - asset: lib/assets/fonts/Segoe/segoe-semibold.ttf
+        - asset: assets/fonts/Segoe/segoe-regular.ttf
+        - asset: assets/fonts/Segoe/segoe-semibold.ttf
           weight: 600
   #
   # For details regarding fonts from package dependencies,
