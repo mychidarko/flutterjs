@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutterjs/router/router.dart';
 import 'package:flutterjs/router/routes.dart';
+import 'package:flutterjs/router/widgets.dart';
 
 class Error extends StatelessWidget {
   @override

@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutterjs/layouts/app.dart';
 
 class Movie extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text('Anime Movie'),
+    return tertiaryLayout(
+      body: Center(
+        child: Text('Anime Movie'),
+      ),
     );
   }
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterjs/router/router.dart';
+import 'package:flutterjs/router/widgets.dart';
 
 class Profile extends StatelessWidget {
   final int _id;

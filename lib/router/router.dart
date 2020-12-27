@@ -41,17 +41,3 @@ RouteFactory router() {
     return MaterialPageRoute(builder: (BuildContext context) => screen);
   };
 }
-
-// Build navigator
-/// Navigate to a different screen. *Inspired by vue router*
-void routeTo(BuildContext context, String route, {Object params}) {
-  Navigator.pushNamed(context, route, arguments: params);
-}
-
-void routeBack(BuildContext context) {
-  Navigator.pop(context);
-}
-
-void pushToRoute(BuildContext context, Route route) {
-  Navigator.push(context, route);
-}
